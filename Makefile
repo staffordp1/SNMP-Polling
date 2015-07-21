@@ -7,7 +7,7 @@ LIB= -lstdc++ -lnsl -lcrypt -lpqxx -lpq -lsnmp -lpthread
 INC= -I /usr/include/linux -I ../include
 
 EXEC=NACpolling
-POLL_OBJ= lib/snmpRec.o lib/fmt.o lib/getPass.o lib/pqDB.o lib/orDB.o lib/polling.o lib/poll_history.o
+POLL_OBJ= lib/snmpRec.o lib/fmt.o lib/getPass.o lib/pqDB.o lib/polling.o lib/poll_history.o
 
 lib/NAC_tools.o: src/NAC_tools.cpp
         $(GPP) -c src/NAC_tools.cpp -o $@
